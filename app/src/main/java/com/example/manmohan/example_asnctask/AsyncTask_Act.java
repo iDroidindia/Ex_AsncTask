@@ -25,7 +25,7 @@ public class AsyncTask_Act  extends Activity {
         BT = (Button) findViewById(R.id.bt_do_it);
         BT_Move = (Button) findViewById(R.id.bt_move);
 
-                Final_Result = (TextView) findViewById(R.id.tv_result);
+        Final_Result = (TextView) findViewById(R.id.tv_result);
 
         BT.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,7 +90,7 @@ public class AsyncTask_Act  extends Activity {
             // example showing ProgessDialog
 
             P_Dialog = new ProgressDialog(AsyncTask_Act.this);
-            P_Dialog.setMessage("Sleeping Time");
+            P_Dialog.setMessage("Sleeping Time....");
             P_Dialog.setCancelable(false);
             P_Dialog.show();
         }
