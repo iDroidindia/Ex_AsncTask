@@ -40,6 +40,9 @@ public class Sensor_Proximity extends Activity implements SensorEventListener {
                  //for (int i=0; i< SE.values.length; i++)
 
             //    Log.e("Values" + i, "" + SE.values[i]);
+            for (int i=0; i< SE.values.length; i++)
+
+                Log.e("Values Else "+i, ""+SE.values[i]);
 
             TV.setText("You are very near to the Sensor.");
         }

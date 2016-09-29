@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AsyncTask_Act  extends Activity {
 
@@ -100,6 +101,7 @@ public class AsyncTask_Act  extends Activity {
         protected void onProgressUpdate(String... text) {
             //P_Dialog.dismiss();
             Final_Result.setText(text[0]);
+            Toast.makeText(getApplicationContext(), "Hello "+text[0], Toast.LENGTH_SHORT).show();
             // Things to be done while execution of long running operation is in
             // progress. For example updating ProgessDialog
         }
